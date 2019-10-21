@@ -9,7 +9,10 @@
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Description)
-    @Html.TextBoxFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)<br>
+
+    @Html.Label("Completed?")
+    @Html.CheckBox("Completed", false)<br>
 
     @Html.Label("Select category")
     @Html.DropDownList("CategoryId")
